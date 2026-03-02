@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>T-Prints - Estampas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center p-4 justify-between max-w-5xl mx-auto w-full">
+<div class="flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+</div>
+<h1 class="text-xl font-bold leading-tight tracking-tight flex-1 text-center">T-Prints</h1>
+<div class="flex size-10 items-center justify-end">
+<button class="relative flex items-center justify-center rounded-lg h-10 w-10 bg-transparent text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] text-white font-bold">2</span>
+</button>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<nav class="flex px-4 max-w-5xl mx-auto w-full">
+<a class="flex flex-1 flex-col items-center justify-center border-b-2 border-transparent py-3 text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="text-sm font-semibold">Camisas</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center border-b-2 border-primary py-3 text-primary" href="#">
+<span class="text-sm font-semibold">Estampas</span>
+</a>
+</nav>
+</header>
+<main class="flex-1 max-w-5xl mx-auto w-full p-4 space-y-6">
+<!-- Friendly Notification Banner -->
+<section class="container-query">
+<div class="flex flex-col @[480px]:flex-row items-start @[480px]:items-center justify-between gap-4 rounded-xl border border-primary/20 bg-primary/10 p-5">
+<div class="flex items-start gap-3">
+<div class="mt-0.5 text-primary">
+<span class="material-symbols-outlined">info</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">Primero debes seleccionar una camisa</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Para aplicar un diseño a tu pedido, elige una prenda base de nuestro catálogo.</p>
+</div>
+</div>
+<button class="w-full @[480px]:w-auto flex min-w-[160px] items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-semibold shadow-sm hover:bg-primary/90 transition-colors">
+<span class="truncate">Ir a seleccionar camisa</span>
+</button>
+</div>
+</section>
+<!-- Search and Filter (Bonus for Utility) -->
+<div class="flex gap-2">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all" placeholder="Buscar diseños..." type="text"/>
+</div>
+<button class="flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-2 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+<!-- Section Title -->
+<div class="flex items-center justify-between">
+<h2 class="text-lg font-bold text-slate-900 dark:text-slate-100">Diseños Disponibles</h2>
+<button class="text-primary text-sm font-semibold">Ver todos</button>
+</div>
+<!-- Grid of Print Designs -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<!-- Card 1: America -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-6">
+<img alt="Logo America de Cali" class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Official logo of America de Cali soccer club" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABebR6mlHERikWIJQq7xTlZEiaWXJSCscoZ_RcnEhLbYSg5Idt-pncsw-fKkI9KqQYyaf4ownGFFnYTtIGLzh6ip3Og3tYCJUqrs_wE2eSDhkCyVw6RC5NxM6a0YrovRNbqFG2r_ccMjWd5p3nKaANX_X1kmGSe0XQaUvVGZH7ZwTJy5cLYVLaBOYiQGBtzk_nj214c9XNzsVkZKzS5mLJ0tqjLjlonkKli87gynz7DIQfQjMPaUFMvFhwnB1JNr90NlqHlDvm70v7"/>
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/30 px-2 py-1 text-[10px] font-bold text-green-700 dark:text-green-400 uppercase tracking-wider">Aprobada</span>
+</div>
+</div>
+<div class="p-3">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">América</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Escudo clásico bordado</p>
+</div>
+</div>
+<!-- Card 2: Cali -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-6">
+<img alt="Logo Deportivo Cali" class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Official logo of Deportivo Cali soccer club" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY8p3ThV03Xw8J_BZqf2yLo03a2f-bzLmNLkB5IOO14DlbOWQpogDiAl8wNo-rIkFEXeqVY2jS3uA9xf6XEu2u3nBeQqbRBS-8t6ukcNQw6RHO2-OlUX9NrDd9djVAzecNgrbtA3YUayge_NzAqNZ5jbaz2mLburDzsF8utMijDLxCaLnilLnjBwXUwVVVs12dfVs5pFf79ozHHmRN0ShlCRSm3vixRXHAec-5WnxxW4lpam5P52ddeYH7hOoyqSqZcsB8vl-qptLm"/>
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/30 px-2 py-1 text-[10px] font-bold text-green-700 dark:text-green-400 uppercase tracking-wider">Aprobada</span>
+</div>
+</div>
+<div class="p-3">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">Cali</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Versión digital premium</p>
+</div>
+</div>
+<!-- Card 3: Millonarios -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-6">
+<img alt="Logo Millonarios FC" class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Official logo of Millonarios FC soccer club" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGV6e51yO2IPlVJlMtyOvg-bxwp8yKEHLqGg9l__g4zg-SmWaDF14DfPNPkgMCfbpCAFSsHJo0Iceud7I6uoKaSOeo199iCiomrEPTTPRKRX3KOaSOrUucpJENUr25nJWwpzC4uDCELTawz6zvMbI0xT0kI-1KUt8J1wg0lSdbGrV4-SFM1RQ0yHSngG49ZApR-xpi7XIx01Umf2oNtB8veF6-Rf-IOXtPZXv8Ln5jI2ODeRzofoLCdU18KmEG1XeiRRbmNR55vT3t"/>
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center rounded-full bg-orange-100 dark:bg-orange-900/30 px-2 py-1 text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase tracking-wider">Pendiente</span>
+</div>
+</div>
+<div class="p-3">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">Millonarios</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Logo aniversario dorado</p>
+</div>
+</div>
+<!-- Card 4: Nacional -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-6">
+<img alt="Logo Atletico Nacional" class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Official logo of Atletico Nacional soccer club" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmP9e4-2cHNlZwrD27Wtr4FBEUm4B-8p2PAtVVAAA3nF4rxkZ-b6GGVuH5OMSS7o-n8DWna8qI4VEsTTOMZA0Q-3FEK8BHntC7ohFjx-M4l07b1Xddrf9adqZOyNnV_GNOgg2UY8n-6U_9oo3eTOuO9akLNt0Ox0p3F1-7kg8vErD_uRDfS8sHMZuIvOKJ8g8jgpYzpqkLERp983m_wmvfgnEE6yN7L952ucmRqLLCfYtYz7aoEdUgVjzS2LcIa7A5gPFNqkKYAfUr"/>
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/30 px-2 py-1 text-[10px] font-bold text-green-700 dark:text-green-400 uppercase tracking-wider">Aprobada</span>
+</div>
+</div>
+<div class="p-3">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">Nacional</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Escudo con estrellas</p>
+</div>
+</div>
+<!-- Card 5: Santa Fe -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-6">
+<img alt="Logo Independiente Santa Fe" class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Official logo of Independiente Santa Fe soccer club" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzoYuu0W7FXQyVIGG0y9ksCnSAKUOrmAAyD_neit5pXlfljcKtn8izFKWiHiCOpviIJnokC8Zo-eZwlPGjz1XGf8DscmbWV6glGoUQ75z5juaP85l4VpHRHjB7g7N3vXMpgM5uwlYFHzoEr4fEQO5Wu4wftDc_rkA5fAxBp1BQQC6SHd06peBVOxsZ4ShmrzoTgikfUa7Nwa6GJg1VGqLPvotKYd0ctwbk-SqS4RQcd568HaZxjvuYro9Ki1lX6G_rRd2YZdPJFlDi"/>
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center rounded-full bg-orange-100 dark:bg-orange-900/30 px-2 py-1 text-[10px] font-bold text-orange-700 dark:text-orange-400 uppercase tracking-wider">Pendiente</span>
+</div>
+</div>
+<div class="p-3">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">Santa Fe</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">León rampante minimalista</p>
+</div>
+</div>
+<!-- Card 6: Junior -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="aspect-square relative overflow-hidden bg-slate-100 dark:bg-slate-900 flex items-center justify-center p-6">
+<img alt="Logo Junior de Barranquilla" class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Official logo of Junior de Barranquilla soccer club" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrevdIikPPQvXWDG7ItNSb0TGxIDq2OOd9YQxrp2EjC3ZlizBL5SpL_4TiBxBqZYRJRT2kZ35N5dgyWp2q5UvgdnpfBJe4aRuTBIi8dzT3z_Q6hnfbtFO_2eyzFqvla8FsQtbEy59pvhusU0ewDmWFd7D0d6elKZmXl3cci6irYqQoQhyth6GszQX7KrIaRRidxgaUzKn94OP8mWV6aApG4kweoEYqLASgeS8dkyz5W6VYQtNZVOtmEUjmhYUEfUPXiFMFM-r9C5wU"/>
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/30 px-2 py-1 text-[10px] font-bold text-green-700 dark:text-green-400 uppercase tracking-wider">Aprobada</span>
+</div>
+</div>
+<div class="p-3">
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">Junior</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Escudo con 10 estrellas</p>
+</div>
+</div>
+</div>
+<div class="py-10 text-center">
+<button class="flex items-center justify-center gap-2 mx-auto rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-700 px-6 py-8 w-full max-w-xs text-slate-500 dark:text-slate-400 hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-semibold">Subir diseño personalizado</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<footer class="sticky bottom-0 z-50 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+<div class="flex gap-2 px-4 pb-3 pt-2 max-w-5xl mx-auto">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">home</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Inicio</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">palette</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Diseños</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Mis Pedidos</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-500 dark:text-slate-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-[10px] font-medium leading-normal">Perfil</p>
+</a>
+</div>
+</footer>
+</body></html>

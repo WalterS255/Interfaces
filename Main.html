@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>T-Prints - Productos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-10 flex items-center bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-3 justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">menu</span>
+</div>
+<h1 class="text-lg font-bold leading-tight tracking-tight text-primary">T-Prints</h1>
+<div class="flex size-10 items-center justify-end">
+<button class="relative flex items-center justify-center rounded-lg p-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white">2</span>
+</button>
+</div>
+</header>
+<main class="flex-1 pb-24">
+<div class="px-4 pt-6 pb-2">
+<h2 class="text-2xl font-bold leading-tight text-slate-900 dark:text-slate-100">Productos</h2>
+</div>
+<div class="sticky top-[64px] z-10 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm pb-2">
+<div class="flex border-b border-slate-200 dark:border-slate-800 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-2 border-primary text-primary pb-3 pt-4" href="#">
+<p class="text-sm font-bold tracking-wide">Camisas</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-3 pt-4 hover:text-primary transition-colors" href="#">
+<p class="text-sm font-bold tracking-wide">Estampas</p>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 p-4">
+<div class="group flex flex-col gap-3 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-square bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat bg-cover" data-alt="Premium blank white t-shirt on invisible mannequin" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPCT4B8evW0dmW2j1_x2DJ-0cXCXd6HNxmHmOdq2g6NGFfoY-4ADjVNKwjepHD0En7A1Bq70QbuUSZFtxarkFTLXfdxjMz5kRv0JojzTrIPGsMzN5jJZF91fDXUyeLbzpC4S0nVlOg1Dw1DxDXC9nCtCEtZJ5yy5cVOgAKj8L3C0etRrrYxU9blgWl9mMLFwaeJe5_CbixZ4Bq3mBGd2NpVd9mwYeKTuBNpxtZRfc4RGMhhsf465-wtsP0Z0a9NCgXy86LtvFeFfqX");'>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="px-3 pb-4">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold leading-snug">Camisa Blanca</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mt-0.5">S, M, L</p>
+<div class="mt-2 flex items-center justify-between">
+<p class="text-primary text-sm font-bold">$50.000</p>
+<span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col gap-3 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-square bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat bg-cover" data-alt="Blank long sleeve white t-shirt laid flat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLcr3VlTHEQWnT0R3dj4Iu4JkB2YHYnEYAEf5iiFqrw7m65bd2XSzEnlYRLbc2ojS_y7dtXptnUKU63KUBQA6en2DDtFcYoBoDD7cF7uT7yZN3uKGqSiBY1m7xVsc4Fpvc9lnGsSqGzL7YV2srqbLT_6wGXnqHESBD8zz8VOW2D7Yra6ygUGQsmlsWjiHlxvidwZWUmB-1dCl26UH0x6kPzNisMZMphQSZHNJ264sR4nC6bjIDqVy1tfdYRR2izF6BLbvtj-50Q47l");'>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="px-3 pb-4">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold leading-snug">Blanca Manga Larga</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mt-0.5">S, M, L, XL</p>
+<div class="mt-2 flex items-center justify-between">
+<p class="text-primary text-sm font-bold">$65.000</p>
+<span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col gap-3 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-square bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat bg-cover" data-alt="Classic blank black t-shirt product shot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc0m30_QCQ_Gw6V8oUlnz170CMaxjdiPSNrQL2egp2U6gNsmUprk5bIfAYmgogVeNrH99jwK3swZki04RaHkUawc3IczE2Rwj-pcoyMHZEtUjj2OnE4CwcWHpRvyNME7eJBWwOvTFmzFJ1djGwgNpoh3bD7FPJoVMTsuGWZD-3niYNtUWD4Avn6Vy_qtfFnoMj8sApCDC6BHwy5795IOjC7bX8xlSJ_GVcO5hysystM9wRh3-NXp15mPm9DCwW3125t9nHLF2PHQEv");'>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="px-3 pb-4">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold leading-snug">Camisa Negra</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mt-0.5">S, M, L</p>
+<div class="mt-2 flex items-center justify-between">
+<p class="text-primary text-sm font-bold">$50.000</p>
+<span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col gap-3 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-square bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat bg-cover" data-alt="Blank grey melange cotton t-shirt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXd283eUW8ySeNwUYxYyBNIQjCAUefxZY3fRFN3zRFBnIjX9pnPTMx9WTrBmybG7RX97i-1-dffYppOylC9gLUkg96t34H6Qe0jG6OswmLxIWwz0768sSoJ5jrPemdpOmmWnVBVdI_IFk9xfGrOZWstLSGpgmAGgz3XxHTuyInJJMNyJSjzPbbzWL-Y6-qiOPgPdbfUF29kPh2KOU8p91kcSv_E9KkDQ_o7-IVu9qbm4ysMbMp8CbHtVWA6f3Bxgklc3-yRBFoNODg");'>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="px-3 pb-4">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold leading-snug">Camisa Gris</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mt-0.5">M, L</p>
+<div class="mt-2 flex items-center justify-between">
+<p class="text-primary text-sm font-bold">$50.000</p>
+<span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col gap-3 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-square bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat bg-cover" data-alt="Blank navy blue casual t-shirt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBuyc_r2-8CyCakpkqeGV_URLRVRgJ2UixYUU9V66lyj-DUxZelxQX6mdi40hxTDGgoAYDTsLP-0oLsQOnQ3agOJ9vz214OzDxTXIbZKFRjuD2HvtNOoOLza0TXTPKSHRZXywpun0BGhJwNG-jlhtcaXqnyyFXiNhKEG1wIOn2i4stkzng9kkGfHUiNH6NYDa4KgJFl0iMasKLBoHHkwIgNppABfU-MhzFWekjVddpWl0-fqjkDPhkFQ-eN5NdIJtMnZOQkw1YhOV_q");'>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="px-3 pb-4">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold leading-snug">Camisa Azul</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mt-0.5">S, M, L</p>
+<div class="mt-2 flex items-center justify-between">
+<p class="text-primary text-sm font-bold">$55.000</p>
+<span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+</div>
+</div>
+</div>
+<div class="group flex flex-col gap-3 bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-square bg-slate-100 dark:bg-slate-800 bg-center bg-no-repeat bg-cover" data-alt="Oversized blank charcoal t-shirt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkUUZ7seCUwJrn5MrExrE3WHHmR1eLcbiqpjIxnPo3a0fX70yVF4TF2otOfxQYvX6-3iNfiatQs7qk3U6Y11yuZuNS6LuuwtoFP7V33LpqhObhc80hm6HvMhEtVJ0qQVXWjZ8J-xYD8qzyL1ZJK6wxjY4tezFQy6XU2Dybc5GHUk2p1gOEKm4ZFLJTkf6DhqkIf8Gef8X6FtffQe_mupdilPW4828w1b9TbBgvjZhMf4-lfcav-8aNAVRKyf2CVh2cHoZXZWOczu6g");'>
+<button class="absolute top-2 right-2 p-1.5 rounded-full bg-white/80 backdrop-blur-sm text-slate-400 hover:text-red-500 transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="px-3 pb-4">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold leading-snug">Camisa Charcoal</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium mt-0.5">M, L, XL</p>
+<div class="mt-2 flex items-center justify-between">
+<p class="text-primary text-sm font-bold">$55.000</p>
+<span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark/95 backdrop-blur-lg px-4 pb-6 pt-3">
+<div class="flex items-center justify-around max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-medium uppercase tracking-widest">Inicio</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined active-icon">shopping_bag</span>
+<p class="text-[10px] font-bold uppercase tracking-widest">Productos</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">palette</span>
+<p class="text-[10px] font-medium uppercase tracking-widest">Diseñar</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-medium uppercase tracking-widest">Perfil</p>
+</a>
+</div>
+</nav>
+</div>
+</body></html>
