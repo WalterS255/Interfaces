@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Print Selection | THE SILENT GALLERY</title>
+<!-- Google Fonts: Noto Serif & Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#171818",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fed488",
+                        "inverse-surface": "#30312e",
+                        "on-surface-variant": "#444748",
+                        "primary-container": "#2c2c2c",
+                        "tertiary-fixed": "#f0e0cc",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-container-low": "#f5f3ee",
+                        "primary-fixed": "#e4e2e1",
+                        "on-primary-fixed-variant": "#474747",
+                        "tertiary-fixed-dim": "#d3c4b1",
+                        "on-tertiary-fixed-variant": "#4f4537",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fbf9f4",
+                        "secondary-fixed": "#ffdea5",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#332b1e",
+                        "on-secondary-container": "#785a1a",
+                        "secondary-fixed-dim": "#e9c176",
+                        "outline-variant": "#c4c7c7",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container": "#f0eee9",
+                        "inverse-primary": "#c8c6c5",
+                        "background": "#fbf9f4",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e2dd",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fbf9f4",
+                        "on-tertiary-fixed": "#221a0e",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae8e3",
+                        "surface-dim": "#dbdad5",
+                        "secondary": "#775a19",
+                        "on-primary-fixed": "#1b1c1c",
+                        "on-primary-container": "#949393",
+                        "outline": "#747878",
+                        "on-tertiary-container": "#9e9280",
+                        "on-background": "#1b1c19",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-tint": "#5f5e5e",
+                        "on-surface": "#1b1c19",
+                        "tertiary": "#1e170b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #fbf9f4; color: #171818; }
+        h1, h2, h3, .serif-font { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4]/70 dark:bg-[#171818]/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-[#171818] dark:text-[#fbf9f4]">
+                THE SILENT GALLERY
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818] dark:text-[#fbf9f4] border-b border-[#2C2C2C] pb-1 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Collections</a>
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818]/60 dark:text-[#fbf9f4]/60 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Bespoke</a>
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818]/60 dark:text-[#fbf9f4]/60 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">The Atelier</a>
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818]/60 dark:text-[#fbf9f4]/60 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Archives</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#171818] dark:text-[#fbf9f4] opacity-80 hover:opacity-100 transition-all duration-500">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="text-[#171818] dark:text-[#fbf9f4] opacity-80 hover:opacity-100 transition-all duration-500">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-[1920px] mx-auto">
+<!-- Header Section -->
+<header class="mb-20 text-center md:text-left">
+<h1 class="text-5xl md:text-7xl font-serif tracking-tighter mb-4">Print Selection</h1>
+<p class="text-on-surface-variant font-body max-w-xl text-lg leading-relaxed">
+                A curated archive of museum-grade desktop prints. Each piece is a digital meditation, captured through intentional minimalist lenswork and abstract composition.
+            </p>
+</header>
+<!-- Artistic Asymmetric Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-y-24 md:gap-x-12 items-start">
+<!-- Item 1: Large Featured -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-low transition-all duration-700">
+<img alt="The Monochrome Etch" class="w-full aspect-[16/9] object-cover transition-transform duration-1000 group-hover:scale-[1.02]" data-alt="Abstract black and white architectural detail with sharp shadows and stark contrast, high-end minimalist photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdZYGTaNx3QA9eCOXpzgHEd11AuI32cmFybXuMfVCLJMctqDFXMCPNXHnSpkqfL90qikkxic-aS9PE22CpHYgrpxjFvREqYIoJYwSFrE-tO_HTKU9w3C1VKYPb9lGprG6hIJTeFnfDF3Henvc7BEtBubi9ERUmngg1RmX7ZcTXYmtu3V7TalgcgzWFLy45frpj1GeZYp7OUqBW-JwQR4WNZcuQbsnxPGYsqcujGyRtA9a-uxI1mWl-3sQ2anaDzO7ii1tEoGsr6rp_"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-700"></div>
+</div>
+<div class="mt-8 flex justify-between items-end">
+<div>
+<span class="text-[10px] tracking-[0.2em] font-bold uppercase text-secondary mb-2 block">Serial: TSG-001-A</span>
+<h3 class="text-3xl font-serif">The Monochrome Etch</h3>
+</div>
+<a class="text-on-surface border-b border-primary/20 pb-1 font-label text-sm tracking-widest uppercase hover:border-primary transition-all duration-300" href="#">
+                        View Selection
+                    </a>
+</div>
+</div>
+<!-- Item 2: Vertical Portrait -->
+<div class="md:col-span-4 md:mt-24 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="Ethereal Grain" class="w-full aspect-[3/4] object-cover transition-transform duration-1000 group-hover:scale-[1.02]" data-alt="Macro photography of fine silk fabric with soft golden light ripples, ethereal and luxurious texture composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0V7KZ3UpLsgQxrbXozHqWR0bk1E06HYN-Y6bqAIfOhP4MX-B-VYtzy7EYU1Mk25O7mz8mtb2MNl8vO4eDlahhvRpUbryYcYFQP8G1rxDA4ZIGrOsyh6nXwFtr21JpO4rOzFMAeyjQaRZnmtsv6Dup1omvmkQQjN-VSgwOlnviD_YE1wXH0nmTsONykEmsiz9QDXmL01d-n1MME1uDnAAFBmhKEcyisKXWgIhBO6B8sVJJL14vWdHPG-EfQlzzzDAPEM2tmVQS9-AM"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-700"></div>
+</div>
+<div class="mt-8">
+<span class="text-[10px] tracking-[0.2em] font-bold uppercase text-secondary mb-2 block">Serial: TSG-042-E</span>
+<h3 class="text-2xl font-serif mb-4">Ethereal Grain</h3>
+<a class="text-on-surface border-b border-primary/20 pb-1 font-label text-sm tracking-widest uppercase hover:border-primary transition-all duration-300" href="#">
+                        View Selection
+                    </a>
+</div>
+</div>
+<!-- Item 3: Standard Card -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="Obsidian Flow" class="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-[1.02]" data-alt="Dark charcoal fluid abstract paint swirls with subtle sheen and deep shadows, moody artistic texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-D5wAO6IT7EK702wI8dbjH-uFWAvNu3Nv2QLg3wWBCHUkpjWixIcpv0bbqkcvKdQZgvfVA6CnWG6522uwvgGxmS5yJP8m3QN_PZMQW_e7SDO6fYeGnpr0qXtQ5Y1d8t14kxdrvJPI--Po7Yp4yfDbY1mVFSgNJOGwQzT9cHGj8ZVtI5uUZ2EW7HsESekbjWmMHfMZMjT6iaSUvdCguvR2FKLBdRLkyK8PeokCTYxifVl7_u5rYjz7FtzwpPnP3PUnwdqh0BuG6oHu"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-700"></div>
+</div>
+<div class="mt-8">
+<span class="text-[10px] tracking-[0.2em] font-bold uppercase text-secondary mb-2 block">Serial: TSG-019-O</span>
+<h3 class="text-2xl font-serif mb-4">Obsidian Flow</h3>
+<a class="text-on-surface border-b border-primary/20 pb-1 font-label text-sm tracking-widest uppercase hover:border-primary transition-all duration-300" href="#">
+                        View Selection
+                    </a>
+</div>
+</div>
+<!-- Item 4: Bespoke CTA Card (Special Styling) -->
+<div class="md:col-span-8 h-full">
+<div class="h-full bg-surface-container-low p-12 md:p-20 flex flex-col justify-center border-l border-secondary/10 relative overflow-hidden group">
+<!-- Subtle background decoration -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 border border-secondary/5 rounded-full group-hover:scale-110 transition-transform duration-1000"></div>
+<div class="relative z-10 max-w-lg">
+<span class="text-xs tracking-[0.3em] font-bold uppercase text-secondary mb-6 block">Exclusive Service</span>
+<h2 class="text-4xl md:text-5xl font-serif mb-8 leading-tight">Request Bespoke Commission</h2>
+<p class="text-on-surface-variant font-body mb-10 text-lg leading-relaxed">
+                            Collaborate with our lead curators to create a one-of-one digital masterpiece tailored to your interior space or digital workspace aesthetic.
+                        </p>
+<button class="bg-primary text-on-primary px-10 py-4 font-label text-sm tracking-widest uppercase hover:bg-primary-container transition-all duration-300 rounded-none inline-flex items-center group/btn">
+                            Initiate Inquiry
+                            <span class="material-symbols-outlined ml-3 text-sm group-hover/btn:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 5: Small Detail -->
+<div class="md:col-span-5 md:mt-[-80px] group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="Silent Canvas" class="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-[1.02]" data-alt="Minimalist abstract painting with soft cream and off-white textures, subtle impasto strokes and high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyxP80_YTQ5sZTdz6glAP1qR4XoF4WRgNHX-HoUyceJboSzgjs2fnL6jOPakowWsTD5xBxPxPESLPmOtDDqYqF8tOry16Y_D37a9-8OVmlvtZOudUinFx3byMJ9bdnS-PyRdQTWYFMfCeiG6BDrUTQHe2MWQ2fZMOUOItxenIpb4TaUFDSs3MKCqV07PGjJOnYK5sF302Ki7EMmC2vRzQEwJSvYOO8OXSLMbjZcmsL6T2B4jUu1oWOPhgWCjlwjGr4HHFS0VemBSMn"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-700"></div>
+</div>
+<div class="mt-8">
+<span class="text-[10px] tracking-[0.2em] font-bold uppercase text-secondary mb-2 block">Serial: TSG-088-S</span>
+<h3 class="text-2xl font-serif mb-4">Silent Canvas</h3>
+<a class="text-on-surface border-b border-primary/20 pb-1 font-label text-sm tracking-widest uppercase hover:border-primary transition-all duration-300" href="#">
+                        View Selection
+                    </a>
+</div>
+</div>
+<!-- Item 6: Horizontal Mid -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-low">
+<img alt="Floral Static" class="w-full aspect-[16/10] object-cover transition-transform duration-1000 group-hover:scale-[1.02]" data-alt="Blurred botanical shapes in warm sunset tones, soft focus artistic capture of nature in motion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFLOnLnbgJlzk1paSOQ74nLUBgIqz_kDwRvQHNjWXu2vsNmJrmDsof21weMTtzepZDYSdTyRMjnGdS3I1yAG_tduhA7ywzfo6tbMGu3uH5XlfpFtnpEsADd-GVX0_d5GkRzgGGEMRHGx9N4AsLexSy_OIKhL1Oyv0NdrJ9zd_0yNsPSPNrL1BGAcYQuurn_avRnYicw6VB-kTiRdOcDKObnZP8dg6A_gA7kgQwRm3vZzFsbZ5_yeP-aGW0GXtvayObdlD-Imt3w31C"/>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-700"></div>
+</div>
+<div class="mt-8">
+<span class="text-[10px] tracking-[0.2em] font-bold uppercase text-secondary mb-2 block">Serial: TSG-102-F</span>
+<h3 class="text-2xl font-serif mb-4">Floral Static</h3>
+<a class="text-on-surface border-b border-primary/20 pb-1 font-label text-sm tracking-widest uppercase hover:border-primary transition-all duration-300" href="#">
+                        View Selection
+                    </a>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer Signpost -->
+<section class="mt-32 pt-24 border-t border-primary/5 text-center">
+<h4 class="font-serif text-3xl mb-4">Join The Archive</h4>
+<p class="text-on-surface-variant max-w-md mx-auto mb-10">Receive exclusive notifications for rare drops and historical archival releases.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
+<input class="bg-surface-container-low border-none focus:ring-0 text-xs tracking-widest uppercase py-4 px-6 w-full font-label placeholder:text-on-surface/40" placeholder="ENTER EMAIL" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 font-label text-xs tracking-widest uppercase hover:bg-primary-container transition-all">Subscribe</button>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-[#f5f3ee] dark:bg-[#1c1c1c] w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+<div class="text-lg font-serif text-[#171818] dark:text-[#fbf9f4]">
+                THE SILENT GALLERY
+            </div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Shipping &amp; Returns</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Contact</a>
+</div>
+<div class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50">
+                © 2024 THE SILENT GALLERY. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

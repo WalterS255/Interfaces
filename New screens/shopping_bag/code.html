@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Selection | THE SILENT GALLERY</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#171818",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed488",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#444748",
+                    "primary-container": "#2c2c2c",
+                    "tertiary-fixed": "#f0e0cc",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container-low": "#f5f3ee",
+                    "primary-fixed": "#e4e2e1",
+                    "on-primary-fixed-variant": "#474747",
+                    "tertiary-fixed-dim": "#d3c4b1",
+                    "on-tertiary-fixed-variant": "#4f4537",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f4",
+                    "secondary-fixed": "#ffdea5",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#332b1e",
+                    "on-secondary-container": "#785a1a",
+                    "secondary-fixed-dim": "#e9c176",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary-fixed": "#261900",
+                    "surface-container": "#f0eee9",
+                    "inverse-primary": "#c8c6c5",
+                    "background": "#fbf9f4",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e4e2dd",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-fixed": "#221a0e",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#eae8e3",
+                    "surface-dim": "#dbdad5",
+                    "secondary": "#775a19",
+                    "on-primary-fixed": "#1b1c1c",
+                    "on-primary-container": "#949393",
+                    "outline": "#747878",
+                    "on-tertiary-container": "#9e9280",
+                    "on-background": "#1b1c19",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-tint": "#5f5e5e",
+                    "on-surface": "#1b1c19",
+                    "tertiary": "#1e170b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4]/70 dark:bg-[#171818]/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-[#171818] dark:text-[#fbf9f4]">
+                THE SILENT GALLERY
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818]/60 dark:text-[#fbf9f4]/60 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Collections</a>
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818]/60 dark:text-[#fbf9f4]/60 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Bespoke</a>
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818]/60 dark:text-[#fbf9f4]/60 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">The Atelier</a>
+<a class="font-serif text-sm tracking-widest uppercase text-[#171818]/60 dark:text-[#fbf9f4]/60 hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Archives</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#171818] dark:text-[#fbf9f4] transition-all Active:opacity-80">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="text-[#171818] dark:text-[#fbf9f4] transition-all Active:opacity-80">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Content Canvas -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 lg:px-24 max-w-[1920px] mx-auto w-full">
+<header class="mb-16">
+<h1 class="text-5xl md:text-6xl font-light tracking-tight text-primary">Your Selection</h1>
+<p class="mt-4 text-on-surface-variant font-body tracking-wide text-sm uppercase">2 ITEMS CURATED</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Column: Items -->
+<section class="lg:col-span-8 space-y-12">
+<!-- Cart Item 1 -->
+<div class="group flex flex-col md:flex-row gap-8 pb-12 transition-all duration-500">
+<div class="w-full md:w-64 aspect-[3/4] overflow-hidden bg-surface-container-low rounded-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a high-end charcoal wool overcoat with visible texture on a minimalist wooden hanger in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBwn-iH6UHKIMsWix6ZM-C3H61IP_0mT1g_IXu0Vc9rVL5w7GXzyy20fwRPnmkBiwx1FZZ4tUUuqusE__yZGBkJPZqqPbFSG8Qpd2BUzL7OrC_-fuQw4N3989cXR4uGhc-tYdHe-bji1NxHADdNYbc9k_HtyHi9K_uQ2TmGHTtt4MxGoUIg5eZyba9MwTQUhpI4hZqDLXv_RC7p6_5JITE-vHVH8aNnveddcKyaloC941EymOHvr108adItaHN6AcxPp1vUSK25230"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-2">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-medium tracking-tight text-primary">Sculptural Wool Overcoat</h3>
+<span class="text-lg font-body font-light text-primary">€2,450.00</span>
+</div>
+<p class="mt-2 text-on-surface-variant font-body leading-relaxed max-w-md">
+                                Hand-tailored from Italian double-faced wool. Featuring a sharp architectural silhouette and hidden button placket.
+                            </p>
+<div class="mt-6 flex flex-wrap gap-8">
+<div>
+<span class="block text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Size</span>
+<span class="text-sm font-medium">48 (EU)</span>
+</div>
+<div>
+<span class="block text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Fabric</span>
+<span class="text-sm font-medium">100% Virgin Wool</span>
+</div>
+<div>
+<span class="block text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Color</span>
+<span class="text-sm font-medium">Anthracite</span>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<button class="flex items-center gap-2 text-[11px] tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors duration-300 group/btn">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+<span class="border-b border-transparent group-hover/btn:border-primary pb-0.5">Remove from selection</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Divider (Tonal) -->
+<div class="h-px w-full bg-surface-container-high"></div>
+<!-- Cart Item 2 -->
+<div class="group flex flex-col md:flex-row gap-8 pb-12 transition-all duration-500">
+<div class="w-full md:w-64 aspect-[3/4] overflow-hidden bg-surface-container-low rounded-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Ethereal silk ivory blouse draped gracefully over a neutral surface with soft shadows and golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKmTCHHoV980Hp77B_Qwv3hMXMMtQefhGh4QTwz2xzFaUTmw3zNtww1nPBRmHqkczKl7GjANvT6lRsn_IkDPSlDY5Y_9A0dsNDOIwIzqQWcBnBSmGBZPQFTAoevGUuy3coJzX-uqPcbRn-4la5iBT6em3H8ixaCy9q4UuWoYcV1e_QRXx5LCx40U_TyepyflfQSwJ7WpSiK2WydY8H4HiWByhm_SF7U8a1SqKn4SDmdxQPW-mot1F-vm2-VKdH8690M-BE8VRpdg3t"/>
+</div>
+<div class="flex-grow flex flex-col justify-between py-2">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-2xl font-medium tracking-tight text-primary">Liquid Silk Blouse</h3>
+<span class="text-lg font-body font-light text-primary">€890.00</span>
+</div>
+<p class="mt-2 text-on-surface-variant font-body leading-relaxed max-w-md">
+                                Crafted from 22mm Mulberry silk for an effortless drape. Finished with mother-of-pearl buttons.
+                            </p>
+<div class="mt-6 flex flex-wrap gap-8">
+<div>
+<span class="block text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Size</span>
+<span class="text-sm font-medium">36 (FR)</span>
+</div>
+<div>
+<span class="block text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Fabric</span>
+<span class="text-sm font-medium">100% Mulberry Silk</span>
+</div>
+<div>
+<span class="block text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Color</span>
+<span class="text-sm font-medium">Champagne</span>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<button class="flex items-center gap-2 text-[11px] tracking-widest uppercase text-on-surface-variant hover:text-primary transition-colors duration-300 group/btn">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+<span class="border-b border-transparent group-hover/btn:border-primary pb-0.5">Remove from selection</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Order Synthesis -->
+<aside class="lg:col-span-4 sticky top-32">
+<div class="bg-surface-container-low p-10 md:p-12 rounded-sm space-y-10">
+<h2 class="text-3xl font-light tracking-tight text-primary border-b border-outline-variant/20 pb-6">Order Synthesis</h2>
+<div class="space-y-4 font-body">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant tracking-wide uppercase text-[11px]">Subtotal</span>
+<span class="text-primary font-medium">€3,340.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant tracking-wide uppercase text-[11px]">Courier (Express)</span>
+<span class="text-primary font-medium">Complimentary</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant tracking-wide uppercase text-[11px]">VAT (Estimated)</span>
+<span class="text-primary font-medium">€668.00</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-end">
+<span class="text-on-surface-variant tracking-widest uppercase text-xs">Total Curator Value</span>
+<span class="text-4xl font-serif text-primary tracking-tighter">€4,008.00</span>
+</div>
+<div class="space-y-6 pt-4">
+<button class="w-full bg-primary text-on-primary py-5 text-[12px] font-bold tracking-[0.2em] uppercase hover:bg-primary-container transition-all duration-500 rounded-sm">
+                            Finalize Purchase
+                        </button>
+<div class="flex items-center justify-center gap-6 opacity-40 grayscale">
+<span class="material-symbols-outlined" data-icon="credit_card">credit_card</span>
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</div>
+</div>
+<div class="pt-4">
+<p class="text-[10px] leading-relaxed text-center text-on-surface-variant uppercase tracking-widest">
+                            Secure Checkout. Express delivery via DHL curated logistics within 3-5 business days.
+                        </p>
+</div>
+</div>
+<!-- Upsell / Gift Card -->
+<div class="mt-8 px-6">
+<button class="w-full text-center py-4 border-b border-outline-variant/20 group">
+<span class="text-[11px] tracking-[0.2em] uppercase text-on-surface-variant group-hover:text-primary transition-colors">Add Promotional Code or Gift Card</span>
+</button>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3ee] dark:bg-[#1c1c1c] w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 max-w-[1920px] mx-auto">
+<div class="text-lg font-serif text-[#171818] dark:text-[#fbf9f4]">THE SILENT GALLERY</div>
+<div class="flex gap-8">
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Shipping &amp; Returns</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-[#171818]/50 dark:text-[#fbf9f4]/50 hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Contact</a>
+</div>
+<div class="font-sans text-[10px] tracking-widest uppercase text-[#171818] dark:text-[#fbf9f4]">
+                © 2024 THE SILENT GALLERY. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

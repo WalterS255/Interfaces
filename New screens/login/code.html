@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#171818",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed488",
+                    "inverse-surface": "#30312e",
+                    "on-surface-variant": "#444748",
+                    "primary-container": "#2c2c2c",
+                    "tertiary-fixed": "#f0e0cc",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container-low": "#f5f3ee",
+                    "primary-fixed": "#e4e2e1",
+                    "on-primary-fixed-variant": "#474747",
+                    "tertiary-fixed-dim": "#d3c4b1",
+                    "on-tertiary-fixed-variant": "#4f4537",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f4",
+                    "secondary-fixed": "#ffdea5",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#332b1e",
+                    "on-secondary-container": "#785a1a",
+                    "secondary-fixed-dim": "#e9c176",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary-fixed": "#261900",
+                    "surface-container": "#f0eee9",
+                    "inverse-primary": "#c8c6c5",
+                    "background": "#fbf9f4",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e4e2dd",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-fixed": "#221a0e",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#eae8e3",
+                    "surface-dim": "#dbdad5",
+                    "secondary": "#775a19",
+                    "on-primary-fixed": "#1b1c1c",
+                    "on-primary-container": "#949393",
+                    "outline": "#747878",
+                    "on-tertiary-container": "#9e9280",
+                    "on-background": "#1b1c19",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-tint": "#5f5e5e",
+                    "on-surface": "#1b1c19",
+                    "tertiary": "#1e170b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen overflow-hidden">
+<main class="flex min-h-screen w-full flex-col md:flex-row">
+<!-- Left Side: The Silent Expression (Visual Canvas) -->
+<section class="relative hidden md:flex md:w-1/2 lg:w-[60%] h-screen items-center justify-center bg-primary overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Minimalist abstract high-fashion photograph" class="w-full h-full object-cover opacity-60" data-alt="high-quality minimalist artistic photograph of draped silk fabric in shadows, monochrome deep charcoal tones with soft directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgxiWWS-ql0G1f-t5H0f399J-iuf2pVbEkGUwPl6kSsBthrQ89WbzDIKjP59mW7e3YTnt0Gy-Hwq2M0B_0pG280uXzRnpOD2icq7pUiXTAEBuwpf5ImSEfSlTUiZ0jCl0BoGiV0lCqn3KUC7vtKR8SJyRXJ1HEks2fe9NRR1uHT0VdJDVKyePFJLiVL-AfvnduwUF3hLBpIBE2n37gUh8HTLeFbPKJevEZiyDTC3edH0oHfloxEXOccOjhEeBnPB5u7RaPzvNwetE1"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary via-transparent to-transparent opacity-40"></div>
+</div>
+<div class="relative z-10 text-center px-12">
+<p class="font-label text-surface-container-highest tracking-[0.5em] uppercase text-xs mb-6">Experience the Archive</p>
+<h1 class="font-serif text-5xl lg:text-7xl text-surface italic tracking-tight leading-none">
+                    The Silent <br/> Expression
+                </h1>
+<div class="mt-12 w-24 h-[1px] bg-secondary-fixed-dim mx-auto"></div>
+</div>
+<!-- Absolute positioned brand anchor -->
+<div class="absolute top-12 left-12 z-20">
+<span class="font-serif text-xl tracking-tighter text-surface-container-lowest">THE SILENT GALLERY</span>
+</div>
+</section>
+<!-- Right Side: Login Form (The Curator's Entry) -->
+<section class="flex flex-col w-full md:w-1/2 lg:w-[40%] bg-surface-bright px-8 md:px-16 lg:px-24 py-12 justify-center min-h-screen">
+<!-- Mobile Brand Logo (Hidden on Desktop) -->
+<div class="md:hidden mb-16">
+<span class="font-serif text-2xl tracking-tighter text-primary">THE SILENT GALLERY</span>
+</div>
+<div class="max-w-md w-full mx-auto">
+<header class="mb-12">
+<h2 class="font-serif text-4xl text-primary mb-3">Welcome Back</h2>
+<p class="text-on-surface-variant font-body text-sm tracking-wide">Enter your credentials to access the atelier.</p>
+</header>
+<form action="#" class="space-y-8" method="POST">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant ml-1" for="email">Email Address</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-0 border-b border-transparent focus:border-secondary transition-all duration-300 py-4 px-4 text-sm font-body text-primary placeholder:text-on-surface-variant/30" id="email" name="email" placeholder="curator@silentgallery.com" required="" type="email"/>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<label class="block font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant ml-1" for="password">Password</label>
+<a class="text-[10px] font-label tracking-widest uppercase text-secondary hover:text-primary transition-colors duration-300" href="#">Forgot?</a>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none focus:ring-0 border-b border-transparent focus:border-secondary transition-all duration-300 py-4 px-4 text-sm font-body text-primary placeholder:text-on-surface-variant/30" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+<!-- CTA Actions -->
+<div class="pt-4 space-y-6">
+<button class="w-full py-5 bg-primary text-on-primary font-label text-xs tracking-[0.3em] uppercase rounded-md hover:bg-primary-container transition-all duration-500 active:scale-[0.98] shadow-sm" type="submit">
+                            SIGN IN
+                        </button>
+<!-- Divider -->
+<div class="relative flex items-center py-4">
+<div class="flex-grow border-t border-surface-container-highest"></div>
+<span class="flex-shrink mx-4 font-label text-[9px] tracking-[0.2em] uppercase text-on-surface-variant/50">Or continue with</span>
+<div class="flex-grow border-t border-surface-container-highest"></div>
+</div>
+<!-- Social Login -->
+<button class="w-full py-4 bg-surface-container-lowest border border-outline-variant/20 flex items-center justify-center gap-3 font-label text-xs tracking-widest uppercase text-on-surface hover:bg-surface-container-low transition-all duration-300" type="button">
+<svg class="w-4 h-4" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+                            Google
+                        </button>
+</div>
+</form>
+<footer class="mt-20 text-center">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant/60">
+                        New to the gallery? 
+                        <a class="text-secondary hover:text-primary underline underline-offset-4 ml-1 transition-all duration-300" href="#">Create account</a>
+</p>
+</footer>
+</div>
+</section>
+</main>
+<!-- Global Layout Decorative Elements -->
+<div class="fixed bottom-12 right-12 hidden lg:block opacity-20">
+<span class="material-symbols-outlined text-6xl text-primary font-thin" style="font-variation-settings: 'wght' 100;">gallery_thumbnail</span>
+</div>
+</body></html>

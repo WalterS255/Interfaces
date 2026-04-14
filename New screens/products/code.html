@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE SILENT GALLERY | Heavyweight Essentials</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary": "#171818",
+                "error": "#ba1a1a",
+                "secondary-container": "#fed488",
+                "inverse-surface": "#30312e",
+                "on-surface-variant": "#444748",
+                "primary-container": "#2c2c2c",
+                "tertiary-fixed": "#f0e0cc",
+                "surface-container-highest": "#e4e2dd",
+                "surface-container-low": "#f5f3ee",
+                "primary-fixed": "#e4e2e1",
+                "on-primary-fixed-variant": "#474747",
+                "tertiary-fixed-dim": "#d3c4b1",
+                "on-tertiary-fixed-variant": "#4f4537",
+                "error-container": "#ffdad6",
+                "surface-bright": "#fbf9f4",
+                "secondary-fixed": "#ffdea5",
+                "primary-fixed-dim": "#c8c6c5",
+                "on-error": "#ffffff",
+                "tertiary-container": "#332b1e",
+                "on-secondary-container": "#785a1a",
+                "secondary-fixed-dim": "#e9c176",
+                "outline-variant": "#c4c7c7",
+                "on-secondary-fixed": "#261900",
+                "surface-container": "#f0eee9",
+                "inverse-primary": "#c8c6c5",
+                "background": "#fbf9f4",
+                "on-error-container": "#93000a",
+                "surface-variant": "#e4e2dd",
+                "on-secondary": "#ffffff",
+                "surface": "#fbf9f4",
+                "on-tertiary-fixed": "#221a0e",
+                "on-primary": "#ffffff",
+                "inverse-on-surface": "#f2f1ec",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#eae8e3",
+                "surface-dim": "#dbdad5",
+                "secondary": "#775a19",
+                "on-primary-fixed": "#1b1c1c",
+                "on-primary-container": "#949393",
+                "outline": "#747878",
+                "on-tertiary-container": "#9e9280",
+                "on-background": "#1b1c19",
+                "on-tertiary": "#ffffff",
+                "on-secondary-fixed-variant": "#5d4201",
+                "surface-tint": "#5f5e5e",
+                "on-surface": "#1b1c19",
+                "tertiary": "#1e170b"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fbf9f4;
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed-dim">
+<!-- Top Navigation Bar -->
+<nav class="bg-[#fbf9f4]/70 dark:bg-[#171818]/70 backdrop-blur-md fixed top-0 w-full z-50 transition-all duration-500">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-[#171818] dark:text-[#fbf9f4]">
+                THE SILENT GALLERY
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#171818] dark:text-[#fbf9f4] border-b border-[#2C2C2C] pb-1 font-serif text-sm tracking-widest uppercase hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Collections</a>
+<a class="text-[#171818]/60 dark:text-[#fbf9f4]/60 font-serif text-sm tracking-widest uppercase hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Bespoke</a>
+<a class="text-[#171818]/60 dark:text-[#fbf9f4]/60 font-serif text-sm tracking-widest uppercase hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">The Atelier</a>
+<a class="text-[#171818]/60 dark:text-[#fbf9f4]/60 font-serif text-sm tracking-widest uppercase hover:text-[#171818] dark:hover:text-[#fbf9f4] transition-colors duration-300" href="#">Archives</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-on-surface hover:opacity-60 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="text-on-surface hover:opacity-60 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-[1920px] mx-auto">
+<!-- Header & Curator's Note -->
+<header class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-3xl">
+<h1 class="text-5xl md:text-7xl font-serif tracking-tight leading-tight mb-6">Heavyweight Essentials</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed italic border-l border-outline-variant pl-6 py-2">
+                    "This collection is a study in structural permanence. Each garment is engineered with high-density fibers to hold its form, transcending the ephemeral nature of seasonal wear. It is silence, rendered in heavy cotton." 
+                    <span class="block mt-4 text-xs tracking-widest uppercase font-bold text-on-surface">— The Curator</span>
+</p>
+</div>
+<!-- Contextual Filter Chip Bar -->
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label text-xs tracking-widest uppercase">All Weights</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high transition-colors font-label text-xs tracking-widest uppercase">300 GSM</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high transition-colors font-label text-xs tracking-widest uppercase">450 GSM</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high transition-colors font-label text-xs tracking-widest uppercase">Organic Pima</button>
+</div>
+</header>
+<!-- Catalog Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="minimalist studio shot of a high-quality heavy black t-shirt hanging on a sculptural wooden hanger against a soft cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZEIknuRNAf_sIspj5V6CrnaNrQHKW-KHe3ZpMLTuwENYOhb2WIl5Q8HJ_NaWwptcAWtlY-9miR1oVz_mExv8U_DFlHWS214EkBr5XlyBCUQLKcRpqC5n6djv85UMiZ-kSfUWGQ35cBHR7rZX8IiqhEQpT4Q9FJBr5uYmu0PucAHHVNJd4swZ25srIzJQYEd_dexZ4agRC8ubtIzM9-CEErNAUsQCBx3cvPeq9VlS8wBH1A_8qTH2mJ_qDE-3IMrRSE_YfWhGMzUaU"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Monumental Tee</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Archival Black | 320 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$145.00</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer pt-12 md:pt-0">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="minimalist studio shot of a thick white structured heavyweight t-shirt draped elegantly over a limestone block in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmrEY_l1jLdoueOihn2p7CIPJ-LeXFSi_D24dN6XkMCtJroL-EVpy_vc5WdB4tbSWfIYz5NXMnCarwASsRDpOFBiAcnvCRagOEjC8CopyuE_JPUa5tWs0cNXavSCzWz2D7SC-31W2_LpNNjHB3TnAf-3BDKtHYXz7OCM9f_anb_gkhnk4G7mO-mPCdLZcMPBz0k-AtwvNe7iWQLK2NXrz83omKBByLZCIQ6bB6y4eNBFKl89p71SC8YkZ_3AyfZGYOnKT9tvvK50-J"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Vanta Heavy T-Shirt</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Bone White | 450 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$165.00</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="close-up of a charcoal grey premium heavy cotton fabric texture on a t-shirt showing the tight weave and structural neckline" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8ZxwWfFx263H8SLV4QcpEMtnZZ-bmoGDFy1uyHguvkscsS8JFwtNarIe42KbK3CC1H06B4M3q2wNm1GltCVV407YNUXZi27LSe5qE7NxusAi3b75XOs8JpeibCbAWNpuhB0qI7dk4k2lYUSPv8IpP0dpfWRYSd_EmWTMTr3uX-WZJ4p9cPyuEt7vW2Lo_5kx5TtW1cTCYvAFy7DWAZ1QCcr_JgaomQ7W4V24OzSN_IwPgdRxhhMqH3055-8k4MjTykBf6Va-wblG"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Monolith Shell</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Deep Graphite | 400 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$180.00</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer pt-12 md:pt-0">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="luxury desert sand colored heavyweight t-shirt displayed in a minimalist gallery setting with soft shadows and warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxRBuF9cVAZh5Y4DOh-Q6sXP5n9yppCJ1wsRAX0KFJebZn1nD9jnUwgeL4b1P8x6D70p7Oix_bGmqLOoCor2kZxjlOWWFtF2TgQULtMJkEYP3b8jSbgTpi8GwkdhXVXJU624m99A_doXUAUAvbBJQhWzD908ViHautdwoBb8CPFcPBsyM7QEtIfAKwgvgbEEDdNWjkhExRFnx6ie6Cm7kWwD6Pl79qHHEY0suhF6V2wqRZes9wM0wFmp8kIvMP_RaKkPOmY-D9hGr-"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Ethereal Form Tee</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Desert Sand | 300 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$130.00</p>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="obsidian black oversized heavyweight t-shirt against a concrete wall with dramatic high contrast side lighting emphasizing the silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOZXA39bgC81jOhx2Jbe_-xQeFsqiFidPnBSBvNkow93VhaveTVb6AgDfXGjR6ckagEuGaPon1A4lhgmpwQ3USbPqnY4hLuYK60MzdiW0ahVQTtkdHy2QIGQrFCLyfTZF9IoZtvKk0qqKdJ65fNcbkJBami5fbTBw4dIGh6bepNx06kFvrn06JaT-dnrENGh59Ft_ZyA55s9qD2yhkblvfHc2nUqU7r1jR4jY4CluktVK0lH0a4qJ6KMaTERsx0H3otSHAJs2D_qVv"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Nocturne Heavy</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Obsidian | 500 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$195.00</p>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group cursor-pointer pt-12 md:pt-0">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="minimalist studio photography of a soft olive green heavy cotton t-shirt with a premium matte finish on a minimalist pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUTmDwFp93zGwOl1Zpg1HJIDETGM0Dd5jFtXdc0Y53qXttpYvGTW56RK-gBoWeFCJnAHBxgiQM99gqBzUakUDdbf0J_fGvSr7bu52nUu_3I8nyscaR8NlhQNkWZKOcvYULcG1GmUB0_zE6-PbNjc3A51UUjGkQRnVDoVuaiEZggeEa124YGaa5KSN-QGx3GNg21w4snFYx4vDTwa5gyXlfwO7cUtqOeNXXjbwPYDoF8vxjOTA1lJThwZyDsc4nNYdpmIbkuaT4Aut0"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Alpine Structure</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Muted Olive | 380 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$155.00</p>
+</div>
+</div>
+<!-- Product 7 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="ash grey heavyweight t-shirt detail showing precise double needle stitching and high-end collar construction on cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBprsiZFLzznBzDQpbJNXK9COLq1ibHqWV8Ylg9mLI2c03nlY0DAO6nMLky1W3ORABn9my7AdDBXZ_k7obeEL4v3a9EFyKh4oW94pTqI90wxogoUwsEGzvFK-BG3dSdvRI6oXB1n35aAXAW2hTKpMn6a7jeMOU1aNOp3UhogDNUUV1jqGmLo45AQdTUnsRR6AX02qd3iFU0ibApfiZk311vuijlgNVvKRkcOYfnaS19rRWFzQKYoMyKf_FO16hmSMmZrdXhApJn2OvK"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Metric Cotton Tee</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Ash Grey | 320 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$140.00</p>
+</div>
+</div>
+<!-- Product 8 -->
+<div class="group cursor-pointer pt-12 md:pt-0">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6 transition-all duration-700 group-hover:bg-surface-container-low">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="stark black t-shirt hanging in a bright open gallery space with long shadows casting across the floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD56mtI1qSRcaFxtAelRpQ-et99wGgK13pv56Oon4hQSw3uGK2AH-INm-4WBHB5cSROFH6uZaCiWzzpvqrwIaPVSbviem0B20K3OlD0FzOAvRNEvHGkjRz7yBzpQpoL7dkI9aJCzA8PePgGv-q31XwsvXoyvX3YmQEXiZdbEtnEtiwnSPKcK7HMfmds8N1fPmDmtbQgz3xFIjAhGpVN1LhBvsCVd4z5B2Kx4Nzf_KZoAVGsiZEYXJBJwu15RP6Mr2jT_36GbYPxJ9wk"/>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-serif">Void Artifact</h3>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Matte Black | 600 GSM</p>
+<p class="text-sm font-label mt-2 text-secondary">$210.00</p>
+</div>
+</div>
+</div>
+<!-- Catalog Pagination / Load More -->
+<div class="mt-24 text-center">
+<button class="px-12 py-4 bg-primary text-on-primary font-label text-sm tracking-[0.2em] uppercase hover:opacity-90 transition-opacity">
+                Load Archive Collection
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3ee] dark:bg-[#1c1c1c] w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+<div class="text-lg font-serif text-[#171818] dark:text-[#fbf9f4]">
+                THE SILENT GALLERY
+            </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#171818]/50 dark:text-[#fbf9f4]/50 font-sans text-[10px] tracking-widest uppercase hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="text-[#171818]/50 dark:text-[#fbf9f4]/50 font-sans text-[10px] tracking-widest uppercase hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="text-[#171818]/50 dark:text-[#fbf9f4]/50 font-sans text-[10px] tracking-widest uppercase hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Shipping &amp; Returns</a>
+<a class="text-[#171818]/50 dark:text-[#fbf9f4]/50 font-sans text-[10px] tracking-widest uppercase hover:text-[#2C2C2C] dark:hover:text-[#fbf9f4] underline underline-offset-4 transition-all" href="#">Contact</a>
+</div>
+<div class="text-[#171818] dark:text-[#fbf9f4] font-sans text-[10px] tracking-widest uppercase opacity-40">
+                © 2024 THE SILENT GALLERY. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
